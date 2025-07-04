@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Selectors-CSS</title>
+    <style>
+        section{
+            border: 1px solid orange;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        /* section:hover{
+            background-color: aqua;
+        } */
+
+        section:first-child{
+            background-color: rgb(226, 43, 43);
+        }
+
+        section:nth-child(3){
+            background-color: rgb(226, 43, 43);
+        }
+
+        p::selection{
+            background-color: aquamarine;
+        }
+        input::placeholder{
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Pseudo-Selectors-CSS
+        1. Class (:)
+        2. Element (::) 
+    -->
+    <input type="text" name="username" placeholder="Enter Your ID"> 
+    <section>Azam</section>
+    <section>Nagendra</section>
+    <section>Vinay</section>
+    <section>Praveen</section>
+    <section>Vijay</section>
+    <section>Shrikanth</section>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam autem commodi hic harum atque unde dolorem corrupti debitis? Autem sequi quisquam soluta, labore totam ad, tenetur ipsa consequatur sint modi facere aut pariatur dignissimos. Corrupti quisquam libero nesciunt ut nisi ab est laboriosam voluptas fuga ratione. Numquam iure, cum facere sit voluptate dolor quae, vel velit quis magni quisquam eveniet similique omnis doloremque inventore. Adipisci nulla delectus laboriosam doloremque et corrupti porro eius eveniet, tempora explicabo perspiciatis sunt quidem similique exercitationem vitae at dolore harum minima quam dolores sint quos repellat voluptate nihil. Voluptas minima iure est nisi tenetur ad?</p>
+</body>
+</html>
