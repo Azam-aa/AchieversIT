@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-css</title>
+    <style>
+        *{
+            background-color: #ded3d3;
+        }
+        h2{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: 50%;
+        }
+       
+        section{
+            border: 2px solid #ded3d3;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card{
+            border: 2px solid white;
+            background-color: white;
+            color: black;
+            padding: 5px;
+            margin: 5px;
+            flex: 1;
+
+        }
+    
+        .buy-now-btn{
+            padding: 5px 10px;
+            margin: 0px 10px 0px 10px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 0%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .buy-now-btn:hover {
+             background-color: #474242;
+        }
+
+    </style>
+</head>
+<body>
+    <h2><b>Recommended for you</h2>
+    <!-- Conatiner-->
+    <section>
+        <!-- Items -->
+         <div class="card">
+            <img src="./imgaes/wifi.png" alt="">
+            <h5 class="card">FIBER</h5>
+            <h3 class="card">Enjoy unlimited wi-fi at ₹999</h3>
+            <h5 class="card">Up to 100 Mbps speed, unlimited calls & OTT apps</h5>
+            <a href="https://www.airtel.in/new-connection/prepaid-sim/?utm_source=website&utm_campaign=pre_acq-website-commerce" class="buy-now-btn">Buy Now</a>
+            <a href="https://www.airtel.in/new-connection/broadband/?lf_open=999">Learn more</a>
+        </div>
+
+         <div class="card">
+            <img src="./imgaes/network.png" alt="">
+            <h5 class="card">POSTPAID</h5>
+            <h3 class="card"> Get a superior network at just ₹549</h3>
+            <h5 class="card">75 GB data with no daily limit & top OTT apps</h5>
+            <a href="https://www.airtel.in/new-connection/postpaid-sim/new-sim?price=549" class="buy-now-btn">Buy Now</a>
+            <a href="https://www.airtel.in/plans/postpaid/">Learn more</a>
+        
+        </div>
+        
+        <div class="card">
+            <img  src="./imgaes/speed.png" alt="">
+            <h5 class="card">PREPAID</h5>
+            <h3 class="card"> Enjoy high speed, seamless network </h3>
+            <h5 class="card"> Home delivery of SIM and Quick activation </h5>
+            <a  href="https://www.airtel.in/new-connection/prepaid-sim/" class="buy-now-btn">Buy Now</a>
+            <a href="https://www.airtel.in/new-connection/prepaid-sim/">Learn more</a>
+        
+        </div>
+
+    </section>
+    <img  style="width: 100%; height: 150px;" src="./imgaes/bg.png" alt="">
+</body>
+</html>
