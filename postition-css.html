@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-CSS</title>
+    <style>
+        body{
+            height: 1500px;
+        }
+        section{
+            border: 3px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        section:nth-child(1){
+            background-color: aqua;
+            position: static;
+        }
+        section:nth-child(2){
+            background-color: yellow;
+            position: absolute;
+            top: 400px;
+            left: 100px;
+
+        }
+        section:nth-child(3){
+            background-color: orange;
+            position: relative;
+            top: 200px;
+
+        }
+        section:nth-child(4){
+            background-color: blue;
+            position: fixed;
+            top: 350px;
+        }
+        section:nth-child(5){
+            background-color: rebeccapurple;
+            position: sticky;
+            top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <section>Static</section>
+    <section>Absolute</section>
+    <section>Relative</section>
+    <section>Fixed</section>
+    <section>Sticky</section>
+
+</body>
+</html>
